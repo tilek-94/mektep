@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.3.0\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.3.0\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DAEE3FEF-7C04-4D30-84AA-A684EAD55495}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Мектеп</RootNamespace>
+    <AssemblyName>Мектеп</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>linecons_e011%280%29.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Мектеп.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.3.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.3.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio">
+      <HintPath>D:\Проект\БалаБакча\Мектеп\bin\Debug\NAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.112.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Core.1.0.112.0\lib\net46\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6, Version=1.0.112.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.EF6.1.0.112.0\lib\net46\System.Data.SQLite.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.112.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Linq.1.0.112.0\lib\net46\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Activator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Activator.Designer.cs">
+      <DependentUpon>Activator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Camera.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addMusic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addMusic.Designer.cs">
+      <DependentUpon>addMusic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CameraUPR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CameraUPR.Designer.cs">
+      <DependentUpon>CameraUPR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Signal2.cs" />
+    <Compile Include="ubakyt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ubakyt.Designer.cs">
+      <DependentUpon>ubakyt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VtorMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VtorMonitor.Designer.cs">
+      <DependentUpon>VtorMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ynTuuraloo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ynTuuraloo.Designer.cs">
+      <DependentUpon>ynTuuraloo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Peremenyi.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PRUbakut.cs" />
+    <Compile Include="Siglan.cs" />
+    <Compile Include="stopZvonka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stopZvonka.Designer.cs">
+      <DependentUpon>stopZvonka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemColor.cs" />
+    <Compile Include="Ubakyt2.cs" />
+    <EmbeddedResource Include="Activator.resx">
+      <DependentUpon>Activator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addMusic.resx">
+      <DependentUpon>addMusic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CameraUPR.resx">
+      <DependentUpon>CameraUPR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ubakyt.resx">
+      <DependentUpon>ubakyt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VtorMonitor.resx">
+      <DependentUpon>VtorMonitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ynTuuraloo.resx">
+      <DependentUpon>ynTuuraloo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stopZvonka.resx">
+      <DependentUpon>stopZvonka.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icomoon_e628%280%29_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Entypo_d83c%280%29_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Material Icons_e04b%280%29_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Entypo_d83d%280%29_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Entypo_d83c%280%29_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Material Icons_e04b%282%29_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Material Icons_e050%280%29_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\Material Icons_e04d%281%29_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\dfsd.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\Material Icons_e04d%281%29_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\Material Icons_e04f%280%29_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\Material Icons_e04f%280%29_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconic_2717%280%29_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\themify_e62f%282%29_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconic_2796%281%29_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\31.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\71.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FontAwesome_f055%280%29_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FontAwesome_f014%280%29_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconic_e047%281%29_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconic_e049%280%29_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Entypo_d83d%280%29_483.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FontAwesome_f00c%280%29_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Forms\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="linecons_e011%280%29.ico" />
+    <None Include="Resources\sFdfsfd.JPG" />
+    <None Include="Resources\logo2.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxAXVLC">
+      <Guid>{DF2BBE39-40A8-433B-A279-073F48DA94B6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AXVLC">
+      <Guid>{DF2BBE39-40A8-433B-A279-073F48DA94B6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Используйте восстановление пакетов NuGet, чтобы скачать их.  Дополнительную информацию см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.3.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.3.0\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.3.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.3.0\build\EntityFramework.targets'))" />
+    <Error Condition="!Exists('..\packages\System.Data.SQLite.Core.1.0.112.0\build\net46\System.Data.SQLite.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.Data.SQLite.Core.1.0.112.0\build\net46\System.Data.SQLite.Core.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.3.0\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.3.0\build\EntityFramework.targets')" />
+  <Import Project="..\packages\System.Data.SQLite.Core.1.0.112.0\build\net46\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.112.0\build\net46\System.Data.SQLite.Core.targets')" />
+</Project>
